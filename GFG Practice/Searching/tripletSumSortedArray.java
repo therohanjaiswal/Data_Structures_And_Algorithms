@@ -1,8 +1,6 @@
 // https://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/
-// Two Pointer Approach, TC: O(n^2), SC: O(1)
-
 class Solution {
-    private static boolean findPair(int[] arr, int low, int high, int sum) {
+    public static boolean findPair(int[] arr, int low, int high, int sum) {
         while (low < high) {
             int currSum = arr[low] + arr[high];
             if (currSum == sum)
@@ -15,6 +13,9 @@ class Solution {
         return false;
     }
 
+    // Two Pointer Approach, TC: O(n^2), SC: O(1)
+    // if the array is unsorted then sort the array which requires O(nlogn) only
+    // then TC: O(nlogn + n^2) = O(n^2)
     public static boolean findTriplet(int[] arr, int sum) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {

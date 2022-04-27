@@ -1,7 +1,6 @@
 // https://www.geeksforgeeks.org/binary-search/
-// TC: O(logn), SC: O(1)
-
 class Solution {
+    // TC: O(logn), SC: O(1)
     public static int recursiveBinarySearch(int[] arr, int x, int low, int high) {
         if (low <= high) {
             int mid = low + (high - low) / 2;

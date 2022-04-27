@@ -1,8 +1,7 @@
 // https://www.geeksforgeeks.org/two-pointers-technique/
-// Two Pointer Technique, TC: O(n), SC: O(1)
-
 class Solution {
-    private static boolean findPair(int[] arr, int sum) {
+    // Two Pointer Technique, TC: O(n), SC: O(1)
+    public static boolean findPair(int[] arr, int sum) {
         int low = 0, high = arr.length - 1;
         while (low < high) {
             int currSum = arr[low] + arr[high];

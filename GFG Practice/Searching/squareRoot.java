@@ -1,7 +1,7 @@
 // https://www.geeksforgeeks.org/square-root-of-an-integer/
-// TC: O(logx), SC: O(1)
 
 class Solution {
+    // TC: O(logx), SC: O(1)
     public static int squareRoot(int x) {
         int low = 1, high = x, ans = -1;
         while (low <= high) {

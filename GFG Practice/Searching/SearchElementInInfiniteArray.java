@@ -1,3 +1,5 @@
+// https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
+
 class Solution {
     public static int binarySearch(int[] arr, int x, int low, int high) {
         if (low <= high) {
@@ -12,6 +14,7 @@ class Solution {
         return -1;
     }
 
+    // TC: O(logn), SC: O(1)
     public static int findPos(int[] arr, int x) {
         int low = 0;
         if (arr[low] == x)

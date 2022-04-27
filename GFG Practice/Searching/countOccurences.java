@@ -1,6 +1,4 @@
 //  https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/
-// TC: O(logn), SC: O(1)
-
 class Solution {
     public static int firstOccurence(int[] arr, int x, int low, int high) {
         if (low <= high) {
@@ -37,6 +35,7 @@ class Solution {
         return -1;
     }
 
+    // TC: O(logn), SC: O(1)
     public static int countOccurences(int[] arr, int x) {
         int firstOcc = firstOccurence(arr, x, 0, arr.length - 1);
         if (firstOcc == -1)

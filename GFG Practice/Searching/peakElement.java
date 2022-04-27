@@ -1,7 +1,7 @@
 // https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/
-// TC: O(logn), SC: O(1)
 
 class Solution {
+    // TC: O(logn), SC: O(1)
     public static int findPeak(int[] arr, int n) {
         int low = 0, high = n - 1;
         while (low <= high) {

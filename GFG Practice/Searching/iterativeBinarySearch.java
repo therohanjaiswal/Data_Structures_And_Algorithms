@@ -1,6 +1,6 @@
 // https://www.geeksforgeeks.org/binary-search/
-// TC: O(logn), SC: O(1)
 class Solution {
+    // TC: O(logn), SC: O(1)
     public static int iterativeBinarySearch(int[] arr, int x) {
         int low = 0, high = arr.length - 1;
         while (low <= high) {

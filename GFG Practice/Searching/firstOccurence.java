@@ -1,6 +1,7 @@
-// TC: O(logn), SC: O(1)
+// https://www.geeksforgeeks.org/find-first-and-last-positions-of-an-element-in-a-sorted-array/
 class Solution {
-    public static int firstOccurence(int[] arr, int x) {
+    // TC: O(logn), SC: O(1)
+    public static int firstOccurenceIterative(int[] arr, int x) {
         int n = arr.length;
         int low = 0, high = n - 1;
 
@@ -18,7 +19,8 @@ class Solution {
         return -1;
     }
 
-    public static int firstOccurence1(int[] arr, int x, int low, int high) {
+    // TC: O(logn), SC: O(run time stack)
+    public static int firstOccurenceRecursive(int[] arr, int x, int low, int high) {
         if (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] > x)

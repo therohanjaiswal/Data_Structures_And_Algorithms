@@ -1,11 +1,9 @@
 // https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/
-// Approach 1: TC: O(n^2), SC: O(1)
-// Approach 2: TC: O(n), SC: O(n)
-
 import java.util.HashSet;
 
 class Solution {
-    public static boolean findPair1(int[] arr, int sum) {
+    // TC: O(n^2), SC: O(1)
+    public static boolean findPairNaive(int[] arr, int sum) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] + arr[j] == sum) {
@@ -17,7 +15,8 @@ class Solution {
         return false;
     }
 
-    public static boolean findPair2(int[] arr, int sum) {
+    // TC: O(n), SC: O(n)
+    public static boolean findPairEfficient(int[] arr, int sum) {
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i < arr.length; i++) {
             set.add(arr[i]);

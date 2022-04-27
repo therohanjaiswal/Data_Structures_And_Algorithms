@@ -1,9 +1,8 @@
 // https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
-// TC: O(logn), SC: O(1)
-
 class Solution {
-    private static int findPos(int[] arr, int x) {
-        int low = 0, high = arr.length - 1;
+    // TC: O(logn), SC: O(1)
+    public static int findPos(int[] arr, int n, int x) {
+        int low = 0, high = n - 1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] == x)
@@ -27,6 +26,6 @@ class Solution {
     public static void main(String[] args) {
         int[] arr = { 100, 200, 300, 10, 30, 40 };
         int x = 10;
-        System.out.println(findPos(arr, x));
+        System.out.println(findPos(arr, arr.length, x));
     }
 }

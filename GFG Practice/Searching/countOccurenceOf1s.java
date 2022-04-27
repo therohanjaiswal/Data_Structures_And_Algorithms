@@ -1,7 +1,7 @@
 // https://www.geeksforgeeks.org/count-1s-sorted-binary-array/
-// TC: O(logn), SC: O(1)
 
 class Solution {
+    // TC: O(logn), SC: O(1)
     public static int firstOccurence(int[] arr, int x, int low, int high) {
         if (low <= high) {
             int mid = low + (high - low) / 2;

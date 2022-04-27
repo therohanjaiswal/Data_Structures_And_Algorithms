@@ -1,5 +1,6 @@
-// TC: O(logn), SC: O(1)
+// https://www.geeksforgeeks.org/find-first-and-last-positions-of-an-element-in-a-sorted-array/
 class Solution {
+    // TC: O(logn), SC: O(run time stack)
     public static int lastOccurence(int[] arr, int x, int low, int high) {
         int n = arr.length;
         if (low <= high) {
